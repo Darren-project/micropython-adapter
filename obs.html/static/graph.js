@@ -3,7 +3,7 @@
 import * as grapher_2d from './graphers/2d.js';
 import * as grapher_3d from './graphers/3d.js';
 
-const CONFIGURED_HTML_URL_PREFIX = '';
+const CONFIGURED_HTML_URL_PREFIX = '/micropython-adapter';
 const URL_MODE = "absolute";
 
 var graphers = [
@@ -289,7 +289,7 @@ function graph_right_click(args){
 // LEAF ACTIONS
 // fn
 function graph_open_link(args){
-    if (! 0)
+    if (! 1)
     {
         return graph_open_link_tabs(args)
     }

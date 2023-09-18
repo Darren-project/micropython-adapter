@@ -7,8 +7,8 @@ var SEARCH_DATA = [];                          // SEARCH_DATA_SOURCE with change
 
 var URL_MODE = 'absolute';
 var RELATIVE_PATHS = 0;
-var CONFIGURED_HTML_URL_PREFIX = '';
-var TRY_PRELOAD = 0;
+var CONFIGURED_HTML_URL_PREFIX = '/micropython-adapter';
+var TRY_PRELOAD = 1;
 
 var fuse;                               // fuzzy search object
 var index;
