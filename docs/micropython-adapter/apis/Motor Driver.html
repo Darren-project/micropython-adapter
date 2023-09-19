@@ -207,12 +207,18 @@
                         <div id="left_pane" class="left_pane active">
     <div id="left_pane_fold_header" class="left_pane_fold_header fold_header">x</div>
     <div id="left_pane_content" class="left_pane_content">
-            <div class="dirtree"><button id="folder-1" class="dir-button" onclick="toggle_dir(this.id)">docs</button>
-<div id="folder-container-1" class="dir-container requires_js active" path="/micropython-adapter/docs">
-	<button id="folder-2" class="dir-button" onclick="toggle_dir(this.id)">micropython-adapter</button>
-	<div id="folder-container-2" class="dir-container requires_js active" path="/micropython-adapter/docs/micropython-adapter">
-		<button id="folder-3" class="dir-button" onclick="toggle_dir(this.id)">apis</button>
-		<div id="folder-container-3" class="dir-container requires_js active" path="/micropython-adapter/docs/micropython-adapter/apis">
+            <div class="dirtree"><button id="folder-1" class="dir-button" onclick="toggle_dir(this.id)">Attachments</button>
+<div id="folder-container-1" class="dir-container requires_js " path="/micropython-adapter/Attachments">
+	<ul class="dir-list">
+		<li><a class="" href="/micropython-adapter/Attachments/adapters.zip"  class="external-link">adapters</a></li>
+	</ul>
+</div>
+<button id="folder-2" class="dir-button" onclick="toggle_dir(this.id)">docs</button>
+<div id="folder-container-2" class="dir-container requires_js active" path="/micropython-adapter/docs">
+	<button id="folder-3" class="dir-button" onclick="toggle_dir(this.id)">micropython-adapter</button>
+	<div id="folder-container-3" class="dir-container requires_js active" path="/micropython-adapter/docs/micropython-adapter">
+		<button id="folder-4" class="dir-button" onclick="toggle_dir(this.id)">apis</button>
+		<div id="folder-container-4" class="dir-container requires_js active" path="/micropython-adapter/docs/micropython-adapter/apis">
 			<ul class="dir-list">
 				<li><a class="" href="/micropython-adapter/docs/micropython-adapter/apis/Lcd Driver.html"  >Lcd Driver</a></li>
 				<li><a class="active" href="/micropython-adapter/docs/micropython-adapter/apis/Motor Driver.html"  >Motor Driver</a></li>
@@ -236,6 +242,23 @@
                         <div class="container">
                                 <embeddedtitle>Motor Driver</embeddedtitle>
 <div class="content"><p><a class="inline-tag" href="/micropython-adapter/obs.html/tags/docs/micropython-adapter/apis/motor-driver/index.html">docs/micropython-adapter/apis/motor-driver</a>   </p>
+<p>This module provides way to control motors   </p>
+<div class="callout callout-example active callout-folded" rasa="0">
+<div class="callout-title " onclick="toggle_callout(this.parentElement)">
+<div class="callout-title-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="callout-icon"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+</div>
+<div class="callout-title-name">Pin Usage <br />
+</div>
+<div class="callout-title-fold"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ChevronDown"><polyline points="6 9 12 15 18 9"></polyline>
+</div>
+</div>
+<div class="callout-content">
+<p>The pins used in this example are used by the board Cytron Maker Pi RP2040, edit it to your own use
+Pin format is as below:
+(M1A, M1B, M2A, M2B)
+</p>
+</div>
+</div>
 <h1 id="initalization">Initalization</h1>
 <div class="lang-py">
 
@@ -249,7 +272,21 @@
 
 <h1 id="usage">Usage</h1>
 <ol>
-<li>Move   </li>
+<li>Move   <div class="callout callout-example active callout-folded" rasa="0">
+<div class="callout-title " onclick="toggle_callout(this.parentElement)">
+<div class="callout-title-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="callout-icon"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+</div>
+<div class="callout-title-name">Limitations and format of use <br />
+</div>
+<div class="callout-title-fold"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ChevronDown"><polyline points="6 9 12 15 18 9"></polyline>
+</div>
+</div>
+<div class="callout-content">
+<p>Follow the format (M1A, M1B, M2A, M2B)
+The value is from 0 to 65535</p>
+</div>
+</div>
+</li>
 </ol>
 <div class="lang-py">
 
@@ -257,8 +294,6 @@
 
 <span class="n">motor</span> <span class="o">=</span> <span class="n">adapters</span><span class="o">.</span><span class="n">motor_driver</span><span class="o">.</span><span class="n">MotorDriver</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">11</span><span class="p">)</span>
 
-<span class="c1"># Follow this format (m1a, m1b, m2a, m2b)</span>
-<span class="c1"># Max value is 65535</span>
 <span class="n">motor</span><span class="o">.</span><span class="n">control</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
 </code></pre></div>
 
@@ -281,13 +316,13 @@
 
 </div>
 <div class="graph requires_js ">
-    <div id="A27565540602090286818578993513234154194{level}" class="graph_div"></div>
+    <div id="A47354872065022176721757022304948721788{level}" class="graph_div"></div>
     
     <div class="graph-button-row" style="display:flex;">
-        <button class="graph_button graph_show_button" id="B27565540602090286818578993513234154194{level}" level="{level}" note_temp_id="27565540602090286818578993513234154194" onclick="window.ObsHtmlGraph.run(this, '27565540602090286818578993513234154194', 'motor driver');">
+        <button class="graph_button graph_show_button" id="B47354872065022176721757022304948721788{level}" level="{level}" note_temp_id="47354872065022176721757022304948721788" onclick="window.ObsHtmlGraph.run(this, '47354872065022176721757022304948721788', 'motor driver');">
             Show Graph
         </button>
-        <button class="graph_button graph_type_button" id="C27565540602090286818578993513234154194{level}" style="flex:1" onclick="window.ObsHtmlGraph.switch_graph_type(this);">
+        <button class="graph_button graph_type_button" id="C47354872065022176721757022304948721788{level}" style="flex:1" onclick="window.ObsHtmlGraph.switch_graph_type(this);">
             2D
         </button>
     </div>

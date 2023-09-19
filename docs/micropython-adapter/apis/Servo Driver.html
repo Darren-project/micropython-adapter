@@ -207,12 +207,18 @@
                         <div id="left_pane" class="left_pane active">
     <div id="left_pane_fold_header" class="left_pane_fold_header fold_header">x</div>
     <div id="left_pane_content" class="left_pane_content">
-            <div class="dirtree"><button id="folder-1" class="dir-button" onclick="toggle_dir(this.id)">docs</button>
-<div id="folder-container-1" class="dir-container requires_js active" path="/micropython-adapter/docs">
-	<button id="folder-2" class="dir-button" onclick="toggle_dir(this.id)">micropython-adapter</button>
-	<div id="folder-container-2" class="dir-container requires_js active" path="/micropython-adapter/docs/micropython-adapter">
-		<button id="folder-3" class="dir-button" onclick="toggle_dir(this.id)">apis</button>
-		<div id="folder-container-3" class="dir-container requires_js active" path="/micropython-adapter/docs/micropython-adapter/apis">
+            <div class="dirtree"><button id="folder-1" class="dir-button" onclick="toggle_dir(this.id)">Attachments</button>
+<div id="folder-container-1" class="dir-container requires_js " path="/micropython-adapter/Attachments">
+	<ul class="dir-list">
+		<li><a class="" href="/micropython-adapter/Attachments/adapters.zip"  class="external-link">adapters</a></li>
+	</ul>
+</div>
+<button id="folder-2" class="dir-button" onclick="toggle_dir(this.id)">docs</button>
+<div id="folder-container-2" class="dir-container requires_js active" path="/micropython-adapter/docs">
+	<button id="folder-3" class="dir-button" onclick="toggle_dir(this.id)">micropython-adapter</button>
+	<div id="folder-container-3" class="dir-container requires_js active" path="/micropython-adapter/docs/micropython-adapter">
+		<button id="folder-4" class="dir-button" onclick="toggle_dir(this.id)">apis</button>
+		<div id="folder-container-4" class="dir-container requires_js active" path="/micropython-adapter/docs/micropython-adapter/apis">
 			<ul class="dir-list">
 				<li><a class="" href="/micropython-adapter/docs/micropython-adapter/apis/Lcd Driver.html"  >Lcd Driver</a></li>
 				<li><a class="" href="/micropython-adapter/docs/micropython-adapter/apis/Motor Driver.html"  >Motor Driver</a></li>
@@ -236,6 +242,20 @@
                         <div class="container">
                                 <embeddedtitle>Servo Driver</embeddedtitle>
 <div class="content"><p><a class="inline-tag" href="/micropython-adapter/obs.html/tags/docs/micropython-adapter/apis/servo-driver/index.html">docs/micropython-adapter/apis/servo-driver</a>   </p>
+<p>This module provides servo controlling   </p>
+<div class="callout callout-example active callout-folded" rasa="0">
+<div class="callout-title " onclick="toggle_callout(this.parentElement)">
+<div class="callout-title-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="callout-icon"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+</div>
+<div class="callout-title-name">Limitations <br />
+</div>
+<div class="callout-title-fold"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ChevronDown"><polyline points="6 9 12 15 18 9"></polyline>
+</div>
+</div>
+<div class="callout-content">
+<p>Only pwm pins are useable for this module</p>
+</div>
+</div>
 <h1 id="initalization">Initalization</h1>
 <div class="lang-py">
 
@@ -249,15 +269,41 @@
 
 <h1 id="usage">Usage</h1>
 <ol>
-<li>Turn the servo   </li>
+<li>Turn the servo   <div class="callout callout-example active callout-folded" rasa="0">
+<div class="callout-title " onclick="toggle_callout(this.parentElement)">
+<div class="callout-title-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="callout-icon"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+</div>
+<div class="callout-title-name">Movement Limits <br />
+</div>
+<div class="callout-title-fold"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ChevronDown"><polyline points="6 9 12 15 18 9"></polyline>
+</div>
+</div>
+<div class="callout-content">
+<p>You can only move 0 to 90 degree</p>
+</div>
+</div>
+</li>
 </ol>
+<div class="callout callout-warning active callout-folded" rasa="0">
+<div class="callout-title " onclick="toggle_callout(this.parentElement)">
+<div class="callout-title-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="callout-icon"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+</div>
+<div class="callout-title-name">Things to not do <br />
+</div>
+<div class="callout-title-fold"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ChevronDown"><polyline points="6 9 12 15 18 9"></polyline>
+</div>
+</div>
+<div class="callout-content">
+<p>Do not move to fast or you might break the servo</p>
+</div>
+</div>
 <div class="lang-py">
 
 <div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">adapters</span>
 
 <span class="n">servo</span> <span class="o">=</span> <span class="n">adapters</span><span class="o">.</span><span class="n">servo_driver</span><span class="o">.</span><span class="n">ServoDriver</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 
-<span class="c1"># Only 0 to 90 degree</span>
+
 <span class="n">servo</span><span class="o">.</span><span class="n">move</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </code></pre></div>
 
@@ -280,13 +326,13 @@
 
 </div>
 <div class="graph requires_js ">
-    <div id="A108479960259547045709711129321396012010{level}" class="graph_div"></div>
+    <div id="A59673729021402281422974788651067819768{level}" class="graph_div"></div>
     
     <div class="graph-button-row" style="display:flex;">
-        <button class="graph_button graph_show_button" id="B108479960259547045709711129321396012010{level}" level="{level}" note_temp_id="108479960259547045709711129321396012010" onclick="window.ObsHtmlGraph.run(this, '108479960259547045709711129321396012010', 'servo driver');">
+        <button class="graph_button graph_show_button" id="B59673729021402281422974788651067819768{level}" level="{level}" note_temp_id="59673729021402281422974788651067819768" onclick="window.ObsHtmlGraph.run(this, '59673729021402281422974788651067819768', 'servo driver');">
             Show Graph
         </button>
-        <button class="graph_button graph_type_button" id="C108479960259547045709711129321396012010{level}" style="flex:1" onclick="window.ObsHtmlGraph.switch_graph_type(this);">
+        <button class="graph_button graph_type_button" id="C59673729021402281422974788651067819768{level}" style="flex:1" onclick="window.ObsHtmlGraph.switch_graph_type(this);">
             2D
         </button>
     </div>
